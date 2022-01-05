@@ -21,7 +21,7 @@ func main() {
 
 	game := game.NewGame(atlas)
 	// Specify the window size as you like. Here, a doubled size is specified.
-	ebiten.SetWindowSize(640, 480)
+	ebiten.SetWindowSize(1048, 728)
 	ebiten.SetWindowTitle("Math Game")
 	// Call ebiten.RunGame to start your game loop.
 	if err := ebiten.RunGame(game); err != nil {

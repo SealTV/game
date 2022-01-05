@@ -60,6 +60,6 @@
 	<SubTexture name="GUI-Kit-Pack-Free_59.png" x="624" y="0" width="351" height="84"/>
 	<SubTexture name="GUI-Kit-Pack-Free_60.png" x="624" y="563" width="77" height="53"/>
 	<SubTexture name="GUI-Kit-Pack-Free_61.png" x="0" y="154" width="624" height="291"/>
-	<SubTexture name="GUI-Kit-Pack-Free_62.png" x="0" y="77" width="624" height="77"/>
+	<SubTexture name="GUI-Kit-Pack-Free_62.png" x="0" y="77" width="623" height="77"/>
 	<SubTexture name="GUI-Kit-Pack-Free_63.png" x="0" y="1" width="624" height="77"/>
 </TextureAtlas>
