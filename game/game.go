@@ -1,17 +1,22 @@
 package game
 
 import (
+	"github.com/blizzy78/ebitenui"
 	"github.com/hajimehoshi/ebiten/v2"
 	"github.com/sealtv/game/types"
 )
 
 type game struct {
 	atlas types.TextureAtlas
+	ui    *ebitenui.UI
 }
 
 func NewGame(atlas types.TextureAtlas) ebiten.Game {
+	ui, _ := newUI(atlas)
+
 	return &game{
 		atlas: atlas,
+		ui:    ui,
 	}
 }
 
@@ -19,6 +24,9 @@ func NewGame(atlas types.TextureAtlas) ebiten.Game {
 // Update is called every tick (1/60 [s] by default).
 func (g *game) Update() error {
 	// Write your game's logical update.
+
+	g.ui.Update()
+
 	return nil
 }
 
@@ -29,7 +37,8 @@ var i int
 func (g *game) Draw(screen *ebiten.Image) {
 	// Write your game's rendering.
 
-	g.drawMenu(screen)
+	g.ui.Draw(screen)
+	// g.drawMenu(screen)
 }
 
 // Layout takes the outside size (e.g., the window size) and returns the (logical) screen size.

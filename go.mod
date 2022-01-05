@@ -2,7 +2,10 @@ module github.com/sealtv/game
 
 go 1.17
 
-require github.com/hajimehoshi/ebiten/v2 v2.2.3
+require (
+	github.com/blizzy78/ebitenui v0.0.0-20211114161546-ca1a302d930b
+	github.com/hajimehoshi/ebiten/v2 v2.2.3
+)
 
 require (
 	github.com/go-gl/glfw/v3.3/glfw v0.0.0-20211024062804-40e447a793be // indirect
